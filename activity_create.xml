@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/pale_blue"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_micro23"
+            android:drawableEnd="@drawable/ic_sound21"
+            android:text="" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/paytone_one"
+            android:text="Create Account"
+            android:textAlignment="center"
+            android:textColor="@color/blk"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/create_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/zen_kaku_gothic_new_bold"
+            android:padding="8dp"
+            android:text="Fill your information below or register with your social account"
+            android:textColor="@color/gray"
+            android:textSize="10sp"/>
+
+        <EditText
+            android:id="@+id/create_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/icons8_person_23"
+            android:drawablePadding="8dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/zen_kaku_gothic_new_bold"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/create_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/zen_kaku_gothic_new_bold"
+            android:hint="Email"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/create_namecompany"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/ic_id"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/zen_kaku_gothic_new_bold"
+            android:hint="Name of Company"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/create_companyadd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/zen_kaku_gothic_new_bold"
+            android:hint="Company Address"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <CheckBox android:id="@+id/checkbox_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By checking the box, you accept the Terms of Use and Privacy Policy."
+            android:textSize="10sp"
+            android:textColor="@color/gray"
+            android:buttonTint="@color/black_transparent" />
+
+        <TextView
+            android:id="@+id/signInWithText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/zen_kaku_gothic_new_bold"
+            android:text="Or Sign In With"
+            android:textColor="@color/fellow_blue" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/googleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableLeft="@drawable/ic_google23"
+            android:fontFamily="@font/zen_kaku_gothic_new_bold"
+            android:padding="10dp"
+            android:text="Sign in with Google"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_outline"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/create_button"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_solid"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Create your account"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</LinearLayout>
